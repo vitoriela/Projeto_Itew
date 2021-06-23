@@ -5,39 +5,333 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/icone.png">
-    <title>Na Tag Cursos - Home</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <title>Na Tag Cursos</title>
+    <style>
+      *{
+        margin: 0 auto;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
+          
+          
+      }
+
+      body{
+          color: #433A3F;
+      }
+
+      strong {
+          color:#568259;
+          transition: color .5s;
+      }
+
+      strong:hover{
+          color:#72A98F;
+      }
+      /** BARRA DE NAVEGAÇÃO**/
+
+
+      .nav-bar {
+          list-style: none;
+          padding: 0;
+          background-color: #433A3F;
+          display: flex;
+          flex-direction: row;
+          
+      } 
+
+
+      .nav-bar li {
+          display: inline;
+          
+      }
+
+      .nav-bar li a {
+          display: inline-block;
+          padding: 20px;
+          color: #568259;
+          text-decoration: none;
+          transition: color .4s;
+          font-weight: 400;
+          text-align: center;
+      }
+
+      .nav-bar li a:hover {
+          color: #72A98F;
+      }
+
+      /*Estilização do Buscar*/
+      .buscar{
+          align-items: center;
+          padding-top: 10px;
+      }
+
+      .buscar input{
+          padding: 10px;
+          text-decoration: none;
+          
+      }
+
+      .buscar button {
+          padding: 10px;
+          color: #3D5A6C ;
+          border-radius: none;
+          cursor: pointer;
+      }
+      /*SOBRE*/
+      section {
+          display: flex;
+          flex-direction: row;
+          background-color:#F1FFFA ;
+          height: 100vh;
+          width: 100%;
+          text-align: center;
+          padding: 150px;
+          
+      }
+      section h1{
+          font-weight: 300;
+          font-size: 2rem;
+      }
+
+      section img {
+          width: 300px;
+          height: 300px;
+          margin-right: 20px;
+      }
+      .sobre {
+          text-align: justify;
+          margin-left: 20px;
+          margin-top: 10px;
+      }
+      .sobre h1 {
+          margin-bottom: 10px;
+      }
+      .sobre p{
+          margin-bottom: 10px;
+      }
+
+
+      /*Estilização dos colaboradores*/
+
+      .card {
+          background-color: #72A98F;
+      }
+
+      .card h1{
+          text-align: center;
+          font-weight: 300;
+          padding-top: 20px;
+      }
+      .team {
+          display: flex;
+          flex-direction: row;
+          
+          
+      }
+
+      .team div{
+          margin-left: 60px;
+          margin-right: 60px;
+      }
+
+      .colaboradores{
+        
+          padding-top: 50px;
+          padding-bottom: 50px;
+          text-align: center;
+          background-color: #72A98F;
+          justify-content: center;
+          max-width: 400px;
+      }
+      .colaboradores img{
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          margin-top: 10px;
+          margin-bottom: 10px;
+      }
+      .colaboradores h3{
+          font-weight: 300;
+      }
+
+      /*AMBIENTE COWORKING*/
+      .titulo{
+          background-color:#F1FFFA ;
+          text-align: center;
+        
+      }
+      .titulo h1{
+          font-weight: 300;
+          padding-top: 20px;
+      }
+
+      .coworking{
+          background-color:#F1FFFA ;
+          
+      }
+
+      .items{
+          display: flex;
+          flex-direction: row;
+          padding-top: 50px;
+      }
+
+      .item h1{
+          padding-top: 60px;
+          padding-left: 20px;
+          max-width: 400px;
+          font-size: 2.8rem;
+          color: #3D5A6C;
+          transition: color .4s;
+          
+      }
+      .item h1:hover{
+          color: #72A98F;
+      }
+
+      /*MAIN DOS CURSOS*/
+
+      main.content{
+        background-color: white;
+        text-align: center;
+        width: 950px;
+
+      }
+      .content h2{
+        text-transform: uppercase;
+        font-size: 2.4rem;
+        color: #353535;
+        padding: 30px 30px;
+        font-weight: 300;
+      }
+
+      .content h3 {
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        color: #353535;
+        padding: 30px 30px;
+        font-weight: 300;
+
+      }
+
+      .content p b {
+        text-transform: uppercase;
+        font-weight: 400;
+        padding-top: 30px;
+      }
+
+      .content ul{
+        list-style: none;
+      }
+
+      #linkcursos{
+        padding-bottom: 50px;
+      }
+      #linkcursos a{
+        color:#72A98F;
+        text-decoration: none;
+        font-weight: 700;
+
+      }
+
+      /*FOOTER*/
+
+      footer {
+          text-align: center;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          background-color:#433A3F ;
+          font-weight: 300;
+          color: #72A98F;
+      }
+
+
+
+    </style>
 </head>
 <body>
-    <header>
+    
 
-        <nav>
-            <ul>
-                <li><a href="#"><img src="img/icone.png" alt="icone na tag cursos" width="60px"></a></li>
-                <li><a href="página2.html">Nossos Cursos</a></li>
-                <li><a href="pagina3.html">Blog</a></li>
-                <li><a href="contatos.html">Contatos</a></li>
-            </ul>
-        </nav>
-
-        <h1 title = "Empresa de cursos de programação voltados para front end.">Na Tag Cursos</h1>
-        <h2>Sobre nós</h2>
-        <p >NaTagCursos é uma instituição de ensino inovadora que oferece cursos online, além de programas presenciais e híbridos de gradução e especialização. Com um corpo docente formado por excelentes profissionais do Brasil e do exterior, nossa escola oferece um novo modelo de ensino das disciplinas criativas com diploma internacional, uso das melhores tecnologias disponíveis e que garantem ao aluno sua inserção no mercado de trabalho.</p>
-        <p>Nossa missão é fazer de você um <strong>Desenvolvedor WEB</strong>! Chegamos agora no mercado e estamos com todo gás. Estamos com métodos sofisticados de E-learning que vão fazer você aprender de uma forma nunca antes vista! Será bem mais fácil do que calcular x<sup>2</sup>, x<sub>1</sub> ou x<sub>2</sub>.<strong> Acredite!</strong></p>
-
-    </header>
-
-  <main>
-
-        <h2>Nosso time</h2>
-
-        <ul>
-            <li><a href="#davidson">Davidson Aguiar</a></li>
-            <li><a href="#lucas">Lucas Ferro</a></li>
-            <li><a href="#vitoria">Vitória</a></li>
+      <nav class="navbar">
+        <ul class="nav-bar">
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="#sobrenos">SOBRE</a></li>
+            <li><a href="cursos.html">CURSOS</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contatos.html">CONTATOS</a></li>
+            <form class="buscar">
+              <input type="text"  placeholder="O que está procurando?">
+              <button type="submit">Buscar</button>
+            </form>
         </ul>
+        
+    </nav>
 
-        <h2>Curso de HTML</h2>
-        <img src="img/html.jpg" alt="Código HTML">
+    <section id="sobrenos"class="sobrenos">
+        <img src="img/icone.png" alt="logomarca">
+        <div class="sobre">
+          <h1 title = "Empresa de cursos de programação voltados para front end.">NA TAG CURSOS</h1>
+          <p >NaTagCursos é uma instituição de ensino inovadora que oferece cursos online, além de programas presenciais e híbridos de gradução e especialização. Com um corpo docente formado por excelentes profissionais do Brasil e do exterior, nossa escola oferece um novo modelo de ensino das disciplinas criativas com diploma internacional, uso das melhores tecnologias disponíveis e que garantem ao aluno sua inserção no mercado de trabalho.</p>
+          <p>Nossa missão é fazer de você um <strong>Desenvolvedor WEB</strong>! Chegamos agora no mercado e estamos com todo gás. Estamos com métodos sofisticados de E-learning que vão fazer você aprender de uma forma nunca antes vista! Será bem mais fácil do que calcular x<sup>2</sup>, x<sub>1</sub> ou x<sub>2</sub>.<strong> Acredite!</strong></p>
+      </div>
+    </section>
+
+
+  <div class="card">
+    <h1>COLABORADORES</h1>
+    <div class="team">
+      
+      
+      <div class="colaboradores">
+        <h3 id="davidson">DAVIDSON AGUIAR</h3>
+        <img src="img/davidimage.jpeg" alt="foto do colaborador">
+        <p>Fundador da academy <b>NaTagCursos</b>. Muitos anos no mercado e possui uma ótima didádica. Ganhador do premio Mito Front-End 2020. Criador do método de ensino utilizado no NaTagCursos.</p>
+        <p>Professor dinamico com aulas participativas.</p>
+      </div>  
+
+      <div class="colaboradores">
+        <h3 id="lucas">LUCAS FERRO</h3>
+        <img src="img/lucasimage.jpeg" alt="foto do colaborador">
+        <p>Gestor de aulas. <b>Programador Senior back-end em Python</b>. Realiza desenvolvimento de planos de ação que satisfaçam as necessidades e demandas para cada segmento social. Gestor de projetos e intervenção comportamental dos procedimentos para otimização dos resultados, relatórios substanciados e sistemáticos.</p>
+      </div>
+
+      <div class="colaboradores">
+        <h3 id="vitoria">VITORIA</h3>
+        <img src="img/vitoriaimage.jpeg" alt="foto do colaborador">
+        <p>Especialista em <b>JavaScript</b> e está no mercado há mais de 10 anos. Leciona nos cursos de HTML e CSS. Entusiasta em UX e UI design e promete revolucinar o mercado com suas bases solidas e experiência.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="titulo">
+    <h1>NOSSO COWORKING SPACE</h1>
+  </div>
+
+  <section class="coworking">
+      <div class="items">
+        <div class="item">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/IxRVa1DbSAg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="item">
+          <h1><em>O melhor ambiente para o melhor <code> &lt;developer&gt;</code>.</em></h1>
+        </div>
+
+        
+      </div>
+  </section>
+
+
+
+  <main class="content">
+      <h2>Curso de HTML</h2>
+        <picture>
+           <img src="img/html.jpg" alt="imagem de codigo html">
+        </picture>
         <p> <mark>O HTML não é uma linguagem de programação</mark>, isso significa que não pode ser usado para criar funcionalidades dinâmicas. Entretanto, o HTML possibilita a organização e formatação de documentos, similar ao Microsoft Word.</p>
         
         <p><b>HTML significa Hypertext Markup Language.</b> <mark>É uma linguagem de marcação utilizada para a criação de páginas na web</mark>. Sua principal finalidade é estruturar o conteúdo disponibilizado em uma página. O Objetivo deste curso é guiar você pelos principais elementos do HTML na prática.</p> 
@@ -98,29 +392,13 @@
       background-color: red;
          }
       </code></pre>
-         
-        <h2>Professores</h2>
 
-        <h3 id="davidson">Davidson Aguiar</h3>
-        <img src="img/davidimage.jpeg" alt="foto do colaborador">
-        <p>Fundador da academy <b>NaTagCursos</b>. Muitos anos no mercado e possui uma ótima didádica. Dizem que é um mito do front end! Gosta de utilizar o método do NaTagCursos (método secreto da equipe) para ensinar e consegue muito resultado.</p>
-        <p>Também consegue dar aulas com bastante entusiasmo e é bom no que faz! Deixa a aula bem dinâmica com questões bastante participativas.</p>
-        
-        <h3 id="lucas">Lucas Ferro</h3>
-        <img src="img/lucasimage.jpeg" alt="foto do colaborador">
-        <p>Lucas faz parte também da equipe e ajuda na gestão das aulas. Em breve está pensando em lançar um curso da parte de back end, utilizando python. Ele realiza desenvolvimento de planos de ação que satisfaçam as necessidades e demandas para cada segmento social. Também faz gestão de projetos e intervenção comportamental dos procedimentos para otimização dos resultados. Além disso, Elabora relatórios substanciados e sistemáticos.</p>
-    
-        <h3 id="vitoria">Vitória</h3>
-        <img src="img/vitoriaimage.jpeg" alt="foto do colaborador">
-        <p>Vitória é especialista em JavaScript e está no mercado há mais de 10 anos. Lenciona nos cursos de HTML e CSS. é adimiradora em UX E UI design e promete revolucinar o mercado com suas bases solidas e experiência.</p>
-
-        <a href= "Página2.html">Próxima página</a>
+      <p id="linkcursos">QUER SABER MAIS? CLIQUE <a href="cursos.html">AQUI</a> PARA ADQUIRIR UM DE NOSSOS CURSOS!</p>
+      
         
   </main>
 
-    <footer>
-        <P> &copy; NA TAG CURSOS - 2021 </P>
-    </footer>
+  <footer>@ Na Tag Cursos - 2021 - Projeto ITeW</footer>
 
 </body>
 </html>

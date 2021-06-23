@@ -3,75 +3,268 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/img/icone.png">
+    <link rel="shortcut icon" href="./img/icone.png">
     <title>Na Tag Cursos - Contatos</title>
+
+    <style>
+        *{
+            margin: 0 auto;
+            padding: 0;
+            text-align: center;
+            box-sizing: border-box;
+            font-family: "montserrat", sans-serif;
+          }
+        body{
+            background: #F1FFFA;
+          }
+              /** BARRA DE NAVEGAÇÃO**/
+
+
+      .nav-bar {
+          list-style: none;
+          padding: 0;
+          background-color: #433A3F;
+          display: flex;
+          flex-direction: row;
+          
+      } 
+
+
+      .nav-bar li {
+          display: inline;
+          
+      }
+
+      .nav-bar li a {
+          display: inline-block;
+          padding: 20px;
+          color: #568259;
+          text-decoration: none;
+          transition: color .4s;
+          font-weight: 400;
+          text-align: center;
+      }
+
+      .nav-bar li a:hover {
+          color: #72A98F;
+      }
+
+      /*Estilização do Buscar*/
+      .buscar{
+          align-items: center;
+          padding-top: 10px;
+      }
+
+      .buscar input{
+          padding: 10px;
+          text-decoration: none;
+          
+      }
+
+      .buscar button {
+          padding: 10px;
+          color: #3D5A6C ;
+          border-radius: none;
+          cursor: pointer;
+      }
+      /*CONTATOS*/
+        #menu-contatos ul li{
+            display: inline-block;
+            width: 180px;
+            height: 30px;
+        } 
+        #menu-contatos h1{
+            padding-top: 30px;
+            padding-bottom: 30px;
+            font-weight: 300;
+            font-size: 2.4rem;
+            color: #433A3F;
+            
+        }
+        #menu-contatos p{
+            padding-bottom: 30px;
+            font-size: 1.5rem;
+            color: #568259;
+            transition: color .5s;
+        }
+        #menu-contatos p:hover{
+            color: #72A98F;
+        }
+        #menu-contatos img{
+            margin-bottom: 20px;
+        }
+        #mensagem{
+            margin-top: 60px;
+        }
+        #mensagem h2{
+            padding-bottom: 15px;
+            font-size: 2.4rem;
+            color: #433A3F;
+            font-weight: 300;
+        }
+        #mensagem label{
+            display: block;
+            margin: 15px auto;
+            border: none;
+        }
+        #name{
+            width: 400px;
+            height: 25px;
+            border-radius: 10px;
+        }
+        #email_input{
+            width: 400px;
+            height: 25px;
+            border-radius: 10px;
+        }
+        #msg{
+            width: 400px;
+            height: 300px;
+            border-radius: 10px;
+            text-align: left;
+        }
+        #mensagem button{
+            display: block;
+            margin: 10px auto;
+            width: 400px;
+            height: 50px;
+            border-radius: 10px;
+            background-color: #353535;
+            transition: background .5s;
+            color: #F1FFFA;
+            font-size: 15px;
+        }
+        #mensagem button:hover{
+            background-color: #72A98F;
+        }
+        #end{
+            margin-top: 60px;
+        }
+        #end h2{
+            margin-bottom: 15px 0;
+            font-size: 2.4rem;
+            color: #353535;
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+        #end iframe{
+            margin-top: 60px;
+            
+        }
+        #contatos-link{
+            margin: 60px 0px;
+        }
+        #contatos-link h2{
+            margin: 60px 0;
+            font-size: 1.5rem;
+            color: #353535;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+        #contatos-link p{
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            font-weight: 300;
+            text-transform: uppercase;
+            color:#353535 ;
+            transition: color .5s;
+        }
+        #contatos-link p:hover{
+            color:#72A98F;
+        }
+        footer{
+            margin: 35px auto 0;
+            height: 60px;
+            width: 100%;
+            background-color: #353535;
+            color:#F1FFFA;
+            border: 2px solid #353535 ;
+        }
+        footer p{
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
 
-        <nav>
-            <ul>
-                <li><a href="/index.html"><img src="/img/icone.png" alt="icone na tag cursos - início" width="60px"></a></li>
-                <li><a href="#">HTML</a></li>
-                <li><a href="#">CSS</a></li>
-                <li><a href="#">Contatos</a></li>
+        <nav class="navbar">
+            <ul class="nav-bar">
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="cursos.html">CURSOS</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contatos.html">CONTATOS</a></li>
+                <form class="buscar">
+                  <input type="text"  placeholder="O que está procurando?">
+                  <button type="submit">Buscar</button>
+                </form>
             </ul>
+            
         </nav>
 
     </header>
 
     <main>
+        <!--adicionada div-->
+        <div id="menu-contatos">
+            <h1>CONTATOS</h1>
+            <p>Como você prefere falar conosco?</p>
 
-        <h1>Nossos contatos</h1>
-        <p>Como você prefere falar conosco?</p>
-
-        <nav>
             <ul>
-                <li><a href="#telefone"><img src="/img/telefone.png" alt="ícone telefone" width="170px"></a></li>
-                <li><a href="#email"><img src="/img/email.jpg" alt="ícone email" width="150px"></a></li>
-                <li><a href="#instagram"><img src="/img/instagram.png" alt="ícone instagram" width="150px"></a></li>
-                <li><a href="#whatsapp"><img src="/img/whatsapp.png" alt="ícone whatsapp" width="150px"></a></li>
+                <li><a href="#telefone"><img src="./img/phone-symbol-of-an-auricular-inside-a-circle_icon-icons.com_56478.png" alt="ícone telefone" width="150px"></a></li>
+                <li><a href="#email"><img src="./img/gmail_black_logo_icon_147126.png" alt="ícone email" width="150px"></a></li>
+                <li><a href="#instagram"><img src="./img/instagram_black_logo_icon_147122.png" alt="ícone instagram" width="150px"></a></li>
+                <li><a href="#whatsapp"><img src="./img/whatsapp_black_logo_icon_147050 (1).png" alt="ícone whatsapp" width="150px"></a></li>
             </ul>
-        </nav>
+        </div>
+        <!--adicionada div-->
+        <div id="mensagem">
+            <h2>MAIL US</h2>
 
-        <h2>Envie uma mensagem</h2>
+            <label for="name">NOME COMPLETO</label>
+                <input type="text" name="name" id="name" placeholder="Example One">
 
-        <label for="name">Nome Completo</label>
-            <input type="text" name="name" id="name" placeholder="Digite seu nome">
+            <label for="email">EMAIL</label>
+                <input type="email" name="email" id="email_input" placeholder="email@example.com">
+            <label for="msg">MENSAGEM</label>
+            <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+            <!--Adicionado botão para enviar-->
+            <button type="submit">ENVIAR</button>
+        </div>
 
-        <label for="email">Email</label>
-            <input type="email" name="email" id="email_input" placeholder="Digite seu email">
-        <label for="msg">Mensagem</label>
-        <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
-
+        <div id="end">
         <h2>Nosso Endereço</h2>
 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15732.795609081355!2d-35.7303309!3d-9.6640396!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1d22c2c44f26f853!2sInstituto%20Federal%20de%20Alagoas%20-%20Campus%20Macei%C3%B3!5e0!3m2!1spt-BR!2sbr!4v1623119388712!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15732.795609081355!2d-35.7303309!3d-9.6640396!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1d22c2c44f26f853!2sInstituto%20Federal%20de%20Alagoas%20-%20Campus%20Macei%C3%B3!5e0!3m2!1spt-BR!2sbr!4v1623119388712!5m2!1spt-BR!2sbr" width="600" height="450" ></iframe>
+        </div>
+        <!--div adicionada-->
+        <div id="contatos-link">
 
-        <h2 id="telefone">Telefone</h2>
+            <h2 id="telefone">Telefone</h2>
 
-        <p> Davidson Aguair</p> <p>(82) 96666-6666</p>
-        <p> Lucas</p> <p>(82) 96666-6666</p>
-        <p> Vitória</p> <p>(82) 96666-6666</p>
+            <p> Davidson Aguiar: (82) 96666-6666</p>
+            <p> Lucas: (82) 96666-6666</p>
+            <p> Vitória: (82) 96666-6666</p>
 
-        <h2 id="email">Emails</h2>
+            <h2 id="email">Emails</h2>
 
+            <p> Davidson Aguiar: davidson@if.com</p>
+            <p> Lucas: lucas@if.com</p>
+            <p> Vitória: vitoria@if.com</p>
 
-        <p> Davidson Aguair</p> <p>davidson@if.com</p>
-        <p> Lucas</p> <p>lucas@if.com</p>
-        <p> Vitória</p> <p>vitoria@if.com</p>
+            <h2 id="instagram">Instagram</h2>
 
-        <h2 id="instagram">Instagram</h2>
+            <p> Davidson Aguiar: @davidson</p>
+            <p> Lucas: @lucas</p>
+            <p> Vitória: @vitoria</p>
 
-        <p> Davidson Aguair</p> <p>@davidson</p>
-        <p> Lucas</p> <p>@lucas</p>
-        <p> Vitória</p> <p>@vitoria</p>
+            <h2 id="whatsapp">Whatsapp</h2>
 
-        <h2 id="whatsapp">Whatsapp</h2>
-
-        <p>(82) 99999-9999</p>
-
+            <p>(82) 99999-9999</p>
+        </div>
     </main>
 
     <footer>

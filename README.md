@@ -1,10 +1,23 @@
 # natagcursos
 projeto WEB
 
-pagina index - pagina introdutória
+Pagina Index
+-Estrutura html feita pelo Davidson Aguiar
+-Aplicação de Estilo feita pela Vitória
 
+Pagina dos Cursos
+-Estrutura Html modificada pelo Lucas, retirada das listas e aplicação de Cards.
+-Estilo pela Vitória e Lucas
 
-Davidson index.html
-Lucas - "Fiz a página 2 e linkei com a index.html. Alterei algumas coisas da página inicial e acrescentei outras."
-Vitoria - pagina 3, alteração nos links do index.
-troca dos avatares
+Pagina Blog e Link lermais
+-Estrutura Html e Estilo feita pela Vitória
+-Mudança na página lermais, adicionando imagem em parte do background.
+
+Página Contatos
+-Estrutura Html feita pelo Davidson
+
+MUDANÇAS 
+-Aplicação de NavBar com um Search (ainda sem funcionalidade)
+-Utilização da tag html <picture> no index
+-Utilização de DIVs no HTML e Class e Id no CSS
+

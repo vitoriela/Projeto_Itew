@@ -5,23 +5,216 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" href="img/icone.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>titulo da noticia</title>
+    <title>Notícias</title>
+    <style>
+        *{
+            margin: 0 auto;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+            
+        }
+        /*barra de navegação*/
+        .nav-bar {
+            list-style: none;
+            padding: 0;
+            background-color: #433A3F;
+            display: flex;
+            flex-direction: row;
+            
+        } 
+
+
+        .nav-bar li {
+            display: inline;
+            
+        }
+
+        .nav-bar li a {
+            display: inline-block;
+            padding: 20px;
+            color: #568259;
+            text-decoration: none;
+            transition: color .4s;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        .nav-bar li a:hover {
+            color: #72A98F;
+        }
+
+        /*Estilização do Buscar*/
+        .buscar{
+            align-items: center;
+            padding-top: 10px;
+        }
+
+        .buscar input{
+            padding: 10px;
+            text-decoration: none;
+            
+        }
+
+        .buscar button {
+            padding: 10px;
+            color: #3D5A6C ;
+            border-radius: none;
+        }
+
+        .noticia{
+            background-image: url(img/js.jpeg);
+            max-width: 1000vh;
+            height: 200px;
+            text-align: left;
+            padding-left: 20px;
+            padding-top: 60px;
+        }
+
+        .noticia h1{
+            font-size: 50px;
+            font-weight: bold;
+            color: #F1FFFA;
+        }
+
+        .noticia h2 {
+            font-size: 30px;
+            font-weight: 200;
+            font-style: italic;
+            color: #F1FFFA ;
+        }
+
+        /*Formatação do texto*/
+        .paragrafo{
+            margin-top: 50px;
+            margin-left: 200px;
+            margin-right: 200px;
+            align-items: center;
+        }
+        .paragrafo strong {
+            font-size: 60px;
+            color: #3D5A6C;
+            transition: color .5s;
+        }
+
+        .paragrafo strong:hover{
+            color: #72A98F;
+        }
+
+        .paragrafo p {
+            text-align: center;
+            padding-top: 20px;
+            color: #433A3F;
+        }
+
+        .paragrafo img{
+            padding-top: 50px;
+            padding-bottom: 50px;
+            margin-left: 150px;
+            
+
+        }
+
+        .noticiaemvideo{
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .noticiaemvideo h3{
+            font-weight: 300;
+            color: #3D5A6C;
+            transition: color .5s;
+            padding-bottom: 30px;
+        }
+
+        .noticiaemvideo h3:hover{
+            color: #72A98F;
+        }
+        /*FOOTER*/
+
+        footer {
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            background-color:#433A3F ;
+            font-weight: 300;
+            color: #72A98F;
+        }
+    </style>
 </head>
 <body>
-    <h1>Titulo da noticia</h1>
-    <img src="img/js.jpeg" alt="JavaScript">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nisl enim, 
-        luctus ut ligula vel, elementum blandit elit. Fusce rutrum sagittis sodales. 
-        Suspendisse tempor, sem blandit egestas ultrices, nisl diam vehicula elit,
-         ornare tempus mauris tortor eu ipsum. Vivamus vitae lectus sit amet nisl scelerisque ultricies. 
-         Nulla viverra dolor eu congue efficitur. Etiam congue maximus neque non commodo. 
-         Curabitur non nulla sed ipsum blandit ullamcorper. 
-         Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer eu ex vel orci facilisis vestibulum. 
-         Proin sagittis odio eu nunc rhoncus porttitor. Maecenas vulputate purus eu felis volutpat, 
-         vitae malesuada lectus porttitor. Nam et viverra ante, vel cursus lectus. Ut euismod fringilla massa,
-          non bibendum turpis sodales ac. In at aliquam nisi. 
-        Nulla facilisi. Vestibulum in purus consectetur, eleifend eros at, bibendum est.</p>
-    <a href= "pagina3.html">Voltar para página anterior</a>
+    <nav class="navbar">
+        <ul class="nav-bar">
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="cursos.html">CURSOS</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contatos.html">CONTATOS</a></li>
+            <form class="buscar">
+              <input type="text"  placeholder="O que está procurando?">
+              <button type="submit">Buscar</button>
+            </form>
+        </ul>
+        
+    </nav>
+
+
+    <div class="noticia">
+        <h1>Open source: o que é e como funciona</h1>
+        <h2>Descubra como funciona o método de codigo aberto que está conquistando a todos!</h2>
+    </div>
+    <div class="paragrafo">
+        <p><strong>L</strong>orem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nisl enim, 
+            luctus ut ligula vel, elementum blandit elit. Fusce rutrum sagittis sodales. 
+            Suspendisse tempor, sem blandit egestas ultrices, nisl diam vehicula elit,
+            ornare tempus mauris tortor eu ipsum. Vivamus vitae lectus sit amet nisl scelerisque ultricies. 
+            Nulla viverra dolor eu congue efficitur. Etiam congue maximus neque non commodo. 
+            Curabitur non nulla sed ipsum blandit ullamcorper. 
+            Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer eu ex vel orci facilisis vestibulum. 
+            Proin sagittis odio eu nunc rhoncus porttitor. Maecenas vulputate purus eu felis volutpat, 
+            vitae malesuada lectus porttitor. Nam et viverra ante, vel cursus lectus. Ut euismod fringilla massa,
+            non bibendum turpis sodales ac. In at aliquam nisi. 
+            Nulla facilisi. Vestibulum in purus consectetur, eleifend eros at, bibendum est.
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nisl enim, 
+            luctus ut ligula vel, elementum blandit elit. Fusce rutrum sagittis sodales. 
+            Suspendisse tempor, sem blandit egestas ultrices, nisl diam vehicula elit,
+            ornare tempus mauris tortor eu ipsum. Vivamus vitae lectus sit amet nisl scelerisque ultricies. 
+            Nulla viverra dolor eu congue efficitur. Etiam congue maximus neque non commodo. 
+            Curabitur non nulla sed ipsum blandit ullamcorper. 
+            Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer eu ex vel orci facilisis vestibulum. 
+            Proin sagittis odio eu nunc rhoncus porttitor. Maecenas vulputate purus eu felis volutpat, 
+            vitae malesuada lectus porttitor. Nam et viverra ante, vel cursus lectus. Ut euismod fringilla massa,
+            non bibendum turpis sodales ac. In at aliquam nisi. 
+            Nulla facilisi. Vestibulum in purus consectetur, eleifend eros at, bibendum est.
+        </p>
+
+        <img src="img/lermais.png" alt="imagemdecodigo" title="Open Source Image">
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nisl enim, 
+            luctus ut ligula vel, elementum blandit elit. Fusce rutrum sagittis sodales. 
+            Suspendisse tempor, sem blandit egestas ultrices, nisl diam vehicula elit,
+            ornare tempus mauris tortor eu ipsum. Vivamus vitae lectus sit amet nisl scelerisque ultricies. 
+            Nulla viverra dolor eu congue efficitur. Etiam congue maximus neque non commodo. 
+            Curabitur non nulla sed ipsum blandit ullamcorper. 
+            Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer eu ex vel orci facilisis vestibulum. 
+            Proin sagittis odio eu nunc rhoncus porttitor. Maecenas vulputate purus eu felis volutpat, 
+            vitae malesuada lectus porttitor. Nam et viverra ante, vel cursus lectus. Ut euismod fringilla massa,
+            non bibendum turpis sodales ac. In at aliquam nisi. 
+            Nulla facilisi. Vestibulum in purus consectetur, eleifend eros at, bibendum est.
+        </p>
+        <div class="noticiaemvideo">
+            <h3>Para mais informações, assista ao video abaixo: </h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/SpeDK1TPbew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+            clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+    <footer>@ Na Tag Cursos - 2021 - Projeto ITeW</footer>
+
+
+    
     
 </body>
 </html>

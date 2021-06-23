@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icone.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap">
+    <title>Cursos</title>
+    <style>
+        *{
+            margin: 0 auto;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+            
+        }
+        /*barra de navegação*/
+        .nav-bar {
+            list-style: none;
+            padding: 0;
+            background-color: #433A3F;
+            display: flex;
+            flex-direction: row;
+            
+        } 
+
+
+        .nav-bar li {
+            display: inline;
+            
+        }
+
+        .nav-bar li a {
+            display: inline-block;
+            padding: 20px;
+            color: #568259;
+            text-decoration: none;
+            transition: color .4s;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        .nav-bar li a:hover {
+            color: #72A98F;
+        }
+        /*Estilização do Buscar*/
+        .buscar{
+            align-items: center;
+            padding-top: 10px;
+        }
+
+        .buscar input{
+            padding: 10px;
+            text-decoration: none;
+            
+        }
+
+        .buscar button {
+            padding: 10px;
+            color: #3D5A6C ;
+            border-radius: none;
+            cursor: pointer;
+        }
+
+        body {
+            background-color: #F1FFFA;
+        }
+
+
+        /*CARDS*/
+
+        .content h1{
+            font-family: "Montserrat", sans-serif;
+            font-weight: 300;
+            text-align: center;
+            padding-top: 30px;
+            font-size: 2.4rem;
+            padding-bottom: 30px;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            max-width: 280px;
+            text-align: center;
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 20px 20px 50px -30px #72A98F;
+        }
+
+        .card img{
+            width: 20vh;
+            height: 20vh;
+            border-radius: 2px;
+        }
+
+        .card h3 {
+            font-weight: bold;
+            padding: 10px 10px;
+            color: #433A3F;
+            transition: color .5s;
+        }
+
+        .card h3 del:hover {
+            color: #72A98F;
+        }
+
+        .card span {
+            color: #433A3F;
+            padding-bottom: 10px;
+        }
+
+        .card button{
+            cursor: pointer;
+            border: none;
+            border-radius: 2px;
+            padding:5px 5px 5px 5px;
+            background-color: #433A3F;
+            color: #F1FFFA;
+            font-weight: 700;
+            margin-bottom: 10px;
+            transition: background .5s;
+        }
+
+        .card button:hover{
+            background-color: #72A98F ;
+        }
+       
+
+
+    </style>    
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-bar">
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="cursos.html">CURSOS</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contatos.html">CONTATOS</a></li>
+            <form class="buscar">
+              <input type="text"  placeholder="O que está procurando?">
+              <button type="submit">Buscar</button>
+            </form>
+        </ul>
+        
+    </nav>
+    <main>
+        <div class="content">
+            <h1>CURSOS DISPONÍVEIS</h1>
+            <div class="cards">
+                <div class="card">
+                    <h3>Lógica de programação</h3>
+                    <img src="https://portalidea.com.br/cursos/c7346872299738f3ca3f7b46722ca155.png" alt="Imagem lógica de programção">
+                    <h3>De <del>R$ 960,67</del> por:R$ 12X de 83,29</h3>
+                    <span>Esse curso é para você, iniciante, que está caminhando no mundo da programação.</span>
+                    <button>COMPAR</button>
+                </div>
+                <div class="card">
+                    <h3>Engenheiro Front End</h3>
+                    <img src="https://i2.wp.com/corucacas.com/wp-content/uploads/2020/05/curso-frontend-do-zero-ao-profissional-vale-a-pena.jpeg?resize=720%2C720&ssl=1" alt="Imagem engenheiro front end">
+                    <h3>De <del>R$ 794,60</del> por:R$ 12X de 30,99</h3>
+                    <span>Você irá aprender HTML5, CSS e javascript. Venha conosco e se torne o melhor!</span>
+                    <button>COMPAR</button>
+                </div>
+                <div class="card">
+                    <h3>Curso javascript</h3>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm_eQ2VTO7uQGYzihhq39NhRuddWXY_Gw0cQ&usqp=CAU" alt="Curso javascript">
+                    <h3>De <del>R$ 2000,67</del> por:R$ 12X de 74,99</h3>
+                    <span>Aprenda sobre o universo do javascript e se destaque no mundo do trabalho!</span>
+                    <button>COMPAR</button>
+                </div>
+                <div class="card">
+                    <h3>Pacote Full Stack</h3>
+                    <img src="https://tipscode.com.br/thumbnail-home/full-stack-turbo.png" alt="Imagem pacote full stack">
+                    <h3>De <del>R$ 10060,67</del> por:R$ 12X de 83,29</h3>
+                    <span>No nosso pacote full stack você irá aprender tudo sobre front end e sobre banco de dados, com python e SQL.</span>
+                    <button>COMPAR</button>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    
+</body>
+
+</html>
