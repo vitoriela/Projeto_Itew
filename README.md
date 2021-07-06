@@ -17,7 +17,10 @@ Página Contatos
 -Estrutura Html feita pelo Davidson
 
 MUDANÇAS 
--Aplicação de NavBar com um Search (ainda sem funcionalidade)
--Utilização da tag html <picture> no index
+-Aplicação de NavBar com um Search (sem funcionalidade)
+-Utilização de versionamento de imagem direto no CSS
 -Utilização de DIVs no HTML e Class e Id no CSS
+-Utilização da tabela (zebra) no index
+
+
 

@@ -237,6 +237,42 @@
 
       }
 
+      #img-media{
+        width: 600px;
+      }
+      @media (max-width: 1200px){
+        #img-media{
+          width: 400px;
+        }
+      }
+      @media (max-width: 800px){
+        #img-media{
+          width: 250px;
+        }
+      }
+
+      /*TABELA*/
+      .tabela {
+        background-color: #F1FFFA;
+        justify-content: center;
+        text-align: center;
+      }
+      .tabela h1{
+        padding: 50px 50px;
+        font-weight: 300;
+      }
+
+      .tabela tr th {
+        padding: 15px 15px;
+      }
+      .tabela tr td {
+        padding: 10px 10px;
+      }
+
+      .tabela tr:nth-child(even) {
+        background-color: #72A98F
+        }
+
       /*FOOTER*/
 
       footer {
@@ -330,7 +366,7 @@
   <main class="content">
       <h2>Curso de HTML</h2>
         <picture>
-           <img src="img/html.jpg" alt="imagem de codigo html">
+           <img src="img/html.jpg" alt="imagem de codigo html" id="img-media">
         </picture>
         <p> <mark>O HTML não é uma linguagem de programação</mark>, isso significa que não pode ser usado para criar funcionalidades dinâmicas. Entretanto, o HTML possibilita a organização e formatação de documentos, similar ao Microsoft Word.</p>
         
@@ -344,7 +380,7 @@
         <p>A estrutura de um código feito em HTML é repleta de tags. Basicamente ela faz as marcações. Podemos pegar como exemplo o conteúdo de uma página. Segue o exemplo dia uma página somente com HTML abaixo.</p>
 
         <p><b>Exemplo:</b></p>
-        <img src="https://i.ytimg.com/vi/NXImYk4WMHM/maxresdefault.jpg" alt="Exemplo de página em html" width="400px">
+        <img src="https://i.ytimg.com/vi/NXImYk4WMHM/maxresdefault.jpg" alt="Exemplo de página em html" width="400px" id="img-media">
 
         <p>Entenda: o título principal é marcado como<code> &lt;h1&gt;</code>. Depois dele, vem os demais: <code>&lt;h2&gt;, &lt;h3&gt;</code> e assim por diante. Isso não significa necessariamente o tamanho da fonte no visual da página, mas, sim, a forma como os robôs de indexação os lerão. Por isso,o HTML é conhecido como uma linguagem de marcação, porque prioriza a hierarquia das informações e não o estilo, que pode ser modificado no CSS.</p>
         
@@ -371,7 +407,7 @@
         </code>
 
         <h2>Curso de CSS</h2>
-        <img src="img/css.jpeg" alt="código CSS">
+        <img src="img/css.jpeg" alt="código CSS" id="img-media">
         
         <p><strong>O que é CSS?!</strong> CSS é a sigla para Cascading Style Sheets, ou seja, Folhas de Estilo em Cascatas. É uma maneira de dar estilo ao código criado por linguagens como HTML, XML ou XHTML, por exemplo. De forma prática, ela funciona como uma camada de personalização ao conteúdo visível.</p>
 
@@ -397,6 +433,64 @@
       
         
   </main>
+  <div class="tabela">
+    <h1>AS LINGUAGENS DE PROGRAMAÇÃO MAIS POPULARES DO MUNDO</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Linguagens</th>
+          <th>Base de desenvolvedores (em milhões)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>JavaScript</td>
+          <td>12,4</td>
+        </tr>
+        <tr>
+          <td>Python</td>
+          <td>9</td>
+        </tr>
+        <tr>
+          <td>Java</td>
+          <td>8,2</td>
+        </tr>
+        <tr>
+          <td>C/C++</td>
+          <td>6,3</td>
+        </tr>
+        <tr>
+          <td>PHP</td>
+          <td>6,1</td>
+        </tr>
+        <tr>
+          <td>C#</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>Visual development tools</td>
+          <td>2,8</td>
+        </tr>
+        <tr>
+          <td>Swift</td>
+          <td>2,4</td>
+        </tr>
+        <tr>
+          <td>Kotlin</td>
+          <td>2,3</td>
+        </tr>
+        <tr>
+          <td>Go</td>
+          <td>1,5</td>
+        </tr>
+        <tr>
+          <td>Demais linguagens</td>
+          <td>Abaixo de 1,5</td>
+        </tr>
+      </tbody>
+      </table>
+
+    </div>
 
   <footer>@ Na Tag Cursos - 2021 - Projeto ITeW</footer>
 
