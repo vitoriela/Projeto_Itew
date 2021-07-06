@@ -16,7 +16,7 @@ Pagina Blog e Link lermais
 Página Contatos
 -Estrutura Html feita pelo Davidson
 
-MUDANÇAS 
+MUDANÇAS 06/07
 -Aplicação de NavBar com um Search (sem funcionalidade)
 -Utilização de versionamento de imagem direto no CSS
 -Utilização de DIVs no HTML e Class e Id no CSS
