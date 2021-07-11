@@ -21,6 +21,8 @@ MUDANÇAS 06/07
 -Utilização de versionamento de imagem direto no CSS
 -Utilização de DIVs no HTML e Class e Id no CSS
 -Utilização da tabela (zebra) no index
+ NOVAS MUDANÇAS
+ -Adição da função Acordeon no index.html
 
 
 
