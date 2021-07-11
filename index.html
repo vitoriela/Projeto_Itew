@@ -270,8 +270,61 @@
       }
 
       .tabela tr:nth-child(even) {
-        background-color: #72A98F
+        background-color: #72A98F;
         }
+
+      /*ACORDEON*/
+      main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: #f1fffa;
+      }
+      .accordion {
+        max-width: 800px;
+      }
+
+      .accordion .content {
+        position: relative;
+        margin: 10px 20px;
+      }
+      .accordion .content .label {
+        position: relative;
+        padding: 10px;
+        background: #72A98F;
+        color:#f1fffa;
+        cursor: pointer;
+
+      }
+
+      .accordion .content .label::before{
+        content: '+';
+        position: absolute;
+        top: 50%;
+        right:20px;
+        transform: translateY(-50%);
+        font-size: 1.5em;
+      }
+      .accordion .content.active .label::before{
+        content: '-';
+      }
+
+      .accordion .content .item {
+        position: relative;
+        background: #fff;
+        height: 0;
+        overflow: hidden;
+        /*transition: 0.5s;*/
+        overflow-y: auto;
+      }
+      .accordion .content.active .item{
+        height: max-content;
+        padding: 20px;
+      }
+
+      
 
       /*FOOTER*/
 
@@ -363,75 +416,101 @@
 
 
 
-  <main class="content">
-      <h2>Curso de HTML</h2>
-        <picture>
-           <img src="img/html.jpg" alt="imagem de codigo html" id="img-media">
-        </picture>
-        <p> <mark>O HTML não é uma linguagem de programação</mark>, isso significa que não pode ser usado para criar funcionalidades dinâmicas. Entretanto, o HTML possibilita a organização e formatação de documentos, similar ao Microsoft Word.</p>
-        
-        <p><b>HTML significa Hypertext Markup Language.</b> <mark>É uma linguagem de marcação utilizada para a criação de páginas na web</mark>. Sua principal finalidade é estruturar o conteúdo disponibilizado em uma página. O Objetivo deste curso é guiar você pelos principais elementos do HTML na prática.</p> 
-        
-        <p>O que vamos ver durante o curso é
-        que o HTML 5 está fortemente relacionado a <em>web semântica</em>, ou seja, o conteúdo das páginas HTML 5 utilizam novos elementos que descrevem com muito mais precisão e organização o conteúdo das páginas HTML.</p>
-        
-        <h3>Como funciona ?</h3>
-        
-        <p>A estrutura de um código feito em HTML é repleta de tags. Basicamente ela faz as marcações. Podemos pegar como exemplo o conteúdo de uma página. Segue o exemplo dia uma página somente com HTML abaixo.</p>
+  <main>
+        <div class="accordion">
+          <div class="content">
+              <div class="label">CURSO DE HTML</div>
+              <div class="item">
+                  <h2>Curso de HTML</h2>
+                  <picture>
+                      <img src="img/html.jpg" alt="imagem de codigo html" id="img-media">
+                  </picture>
+                  <p> <mark>O HTML não é uma linguagem de programação</mark>, isso significa que não pode ser usado para criar funcionalidades dinâmicas. Entretanto, o HTML possibilita a organização e formatação de documentos, similar ao Microsoft Word.</p>
+                  
+                  <p><b>HTML significa Hypertext Markup Language.</b> <mark>É uma linguagem de marcação utilizada para a criação de páginas na web</mark>. Sua principal finalidade é estruturar o conteúdo disponibilizado em uma página. O Objetivo deste curso é guiar você pelos principais elementos do HTML na prática.</p> 
+                  
+                  <p>O que vamos ver durante o curso é
+                  que o HTML 5 está fortemente relacionado a <em>web semântica</em>, ou seja, o conteúdo das páginas HTML 5 utilizam novos elementos que descrevem com muito mais precisão e organização o conteúdo das páginas HTML.</p>
+                  
+                  <h3>Como funciona ?</h3>
+                  
+                  <p>A estrutura de um código feito em HTML é repleta de tags. Basicamente ela faz as marcações. Podemos pegar como exemplo o conteúdo de uma página. Segue o exemplo dia uma página somente com HTML abaixo.</p>
 
-        <p><b>Exemplo:</b></p>
-        <img src="https://i.ytimg.com/vi/NXImYk4WMHM/maxresdefault.jpg" alt="Exemplo de página em html" width="400px" id="img-media">
+                  <p><b>Exemplo:</b></p>
+                  <img src="https://i.ytimg.com/vi/NXImYk4WMHM/maxresdefault.jpg" alt="Exemplo de página em html" width="400px" id="img-media">
 
-        <p>Entenda: o título principal é marcado como<code> &lt;h1&gt;</code>. Depois dele, vem os demais: <code>&lt;h2&gt;, &lt;h3&gt;</code> e assim por diante. Isso não significa necessariamente o tamanho da fonte no visual da página, mas, sim, a forma como os robôs de indexação os lerão. Por isso,o HTML é conhecido como uma linguagem de marcação, porque prioriza a hierarquia das informações e não o estilo, que pode ser modificado no CSS.</p>
-        
-        <h3>Tags básicas</h3>
-      <p>
-        <ul>
-          <li><code>&lt;p&gt;</code> e <code>&lt;/p&gt;</code>: marca o começo e o fim de um parágrafo;</li>
-          <li><code>&lt;img&gt;</code>: usada para inserir imagem;</li>
-         <li><code>&lt;a&gt;</code> e <code>&lt;/a&gt;</code>: usadas para inserir link;</li>
-         <li><code>&lt;ol&gt;</code> e <code>&lt;/ol&gt;</code>: usadas para começar e fechar listas ordenadas;</li>
-         <li><code>&lt;ul&gt;</code> e <code>&lt;/ul&gt;</code>: usadas para começar e fechar listas não ordenadas;</li>
-         <li><code>&lt;b&gt;</code> e <code>&lt;strong&gt;</code>: servem para marcar o texto em negrito, porém o <code>&lt;strong&gt;</code> tem uma característica de dar força ao texto;</li>
-         <li><code>&lt;i&gt;</code>: serve para deixar o texto em itálico.</li>
-         <li><code>&lt;em&gt;</code>: serve para deixar o texto em itálico e enfatizá-lo.</li>
-        </ul>
-      </p>
+                  <p>Entenda: o título principal é marcado como<code> &lt;h1&gt;</code>. Depois dele, vem os demais: <code>&lt;h2&gt;, &lt;h3&gt;</code> e assim por diante. Isso não significa necessariamente o tamanho da fonte no visual da página, mas, sim, a forma como os robôs de indexação os lerão. Por isso,o HTML é conhecido como uma linguagem de marcação, porque prioriza a hierarquia das informações e não o estilo, que pode ser modificado no CSS.</p>
+                  
+                  <h3>Tags básicas</h3>
+                  <p>
+                      <ul>
+                      <li><code>&lt;p&gt;</code> e <code>&lt;/p&gt;</code>: marca o começo e o fim de um parágrafo;</li>
+                      <li><code>&lt;img&gt;</code>: usada para inserir imagem;</li>
+                      <li><code>&lt;a&gt;</code> e <code>&lt;/a&gt;</code>: usadas para inserir link;</li>
+                      <li><code>&lt;ol&gt;</code> e <code>&lt;/ol&gt;</code>: usadas para começar e fechar listas ordenadas;</li>
+                      <li><code>&lt;ul&gt;</code> e <code>&lt;/ul&gt;</code>: usadas para começar e fechar listas não ordenadas;</li>
+                      <li><code>&lt;b&gt;</code> e <code>&lt;strong&gt;</code>: servem para marcar o texto em negrito, porém o <code>&lt;strong&gt;</code> tem uma característica de dar força ao texto;</li>
+                      <li><code>&lt;i&gt;</code>: serve para deixar o texto em itálico.</li>
+                      <li><code>&lt;em&gt;</code>: serve para deixar o texto em itálico e enfatizá-lo.</li>
+                      </ul>
+                  </p>
+              
 
+                  <p>Exemplos de aplicação:</p>
+                  <code>
+                      <p>&lt;h1&gt;Tag para título&lt;/h1&gt;</p>
+                      <p>&lt;p&gt;Tag para paragráfo&lt;/p&gt;</p>
+                      <p>&lt;img src="endereço da imagem"&gt;;</p>
+                  </code>
 
-        <p>Exemplos de aplicação:</p>
-        <code>
-            <p>&lt;h1&gt;Tag para título&lt;/h1&gt;</p>
-            <p>&lt;p&gt;Tag para paragráfo&lt;/p&gt;</p>
-            <p>&lt;img src="endereço da imagem"&gt;;</p>
-        </code>
+              </div>
+          </div>
+      </div>
+      <div class="accordion">
+          <div class="content">
+              <div class="label">CURSO DE CSS</div>
+              <div class="item">
+                  <h2>Curso de CSS</h2>
+                  <img src="img/css.jpeg" alt="código CSS" id="img-media">
+                  
+                  <p><strong>O que é CSS?!</strong> CSS é a sigla para Cascading Style Sheets, ou seja, Folhas de Estilo em Cascatas. É uma maneira de dar estilo ao código criado por linguagens como HTML, XML ou XHTML, por exemplo. De forma prática, ela funciona como uma camada de personalização ao conteúdo visível.</p>
 
-        <h2>Curso de CSS</h2>
-        <img src="img/css.jpeg" alt="código CSS" id="img-media">
-        
-        <p><strong>O que é CSS?!</strong> CSS é a sigla para Cascading Style Sheets, ou seja, Folhas de Estilo em Cascatas. É uma maneira de dar estilo ao código criado por linguagens como HTML, XML ou XHTML, por exemplo. De forma prática, ela funciona como uma camada de personalização ao conteúdo visível.</p>
+                  <p> Estes tipos de linguagem citados foram idealizados para serem funcionais e, por serem de marcação, precisaram ser aperfeiçoados. O CSS, no caso, veio como uma boa solução para aprimorar a estética dos sites.</p>
 
-        <p> Estes tipos de linguagem citados foram idealizados para serem funcionais e, por serem de marcação, precisaram ser aperfeiçoados. O CSS, no caso, veio como uma boa solução para aprimorar a estética dos sites.</p>
+                  <p>O CSS é um código em que você pode fazer alterações rápidas de layout, como definição de cores e fontes, por exemplo. Essa camada proporciona não apenas a facilidade de personalização, como também ajuda a diminuir a repetição de conteúdo na estrutura do código.</p>
+                  
+                  <p>Conheça como importar e incorporá-lo no HTML. Além disso você aprenderá a escrever
+                  seus primeiros códigos e conhecer as principais propriedades e atributos. Aprenda também a inserir 
+                  efeitos em blocos de texto, como por exemplo a capitular, através dos pseudo-elementos.</p>
 
-        <p>O CSS é um código em que você pode fazer alterações rápidas de layout, como definição de cores e fontes, por exemplo. Essa camada proporciona não apenas a facilidade de personalização, como também ajuda a diminuir a repetição de conteúdo na estrutura do código.</p>
-        
-        <p>Conheça como importar e incorporá-lo no HTML. Além disso você aprenderá a escrever
-        seus primeiros códigos e conhecer as principais propriedades e atributos. Aprenda também a inserir 
-        efeitos em blocos de texto, como por exemplo a capitular, através dos pseudo-elementos.</p>
+                  <p><b>Exemplos de uso de CSS:</b></p>
+                  <pre><code>
+                  body{
 
-        <p><b>Exemplos de uso de CSS:</b></p>
-      <pre><code>
-      body{
+                  color: red;
 
-      color: red;
+                  background-color: red;
+                  }
+                  </code></pre>
 
-      background-color: red;
-         }
-      </code></pre>
+                  
 
-      <p id="linkcursos">QUER SABER MAIS? CLIQUE <a href="cursos.html">AQUI</a> PARA ADQUIRIR UM DE NOSSOS CURSOS!</p>
-      
-        
+              </div>
+          </div>
+      </div>
+      <div class="accordion">
+        <div class="content">
+            <div class="label">CURSO DE JAVASCRIPT</div>
+            <div class="item">
+                <h2>Curso de JavaScript</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit repellat debitis, accusamus
+                   consectetur numquam earum esse illo commodi omnis excepturi velit voluptate quaerat ipsa. Ad, itaque
+                    temporibus! Animi, quidem iure.</p>
+
+            </div>
+        </div>
+    </div>
+    
   </main>
   <div class="tabela">
     <h1>AS LINGUAGENS DE PROGRAMAÇÃO MAIS POPULARES DO MUNDO</h1>
@@ -493,6 +572,16 @@
     </div>
 
   <footer>@ Na Tag Cursos - 2021 - Projeto ITeW</footer>
+
+  <script>
+    const accordion = document.getElementsByClassName ('content');
+
+    for (i=0; i<accordion.length; i++){
+      accordion[i].addEventListener('click', function(){
+        this.classList.toggle ('active')
+      })
+    }
+  </script>
 
 </body>
 </html>
